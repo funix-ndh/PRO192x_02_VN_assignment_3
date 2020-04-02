@@ -95,7 +95,7 @@ class BookList {
         // find book
         for (final Book book : books) {
             if (book.getId().equalsIgnoreCase(searchID)) {
-                // can not borrowed if it's been alreay borrowed
+                // can not borrow if it's been already borrowed
                 if (book.isBorrowed()) {
                     System.out.println("You can not borrow this book. The book have been borrowed.");
                 } else {

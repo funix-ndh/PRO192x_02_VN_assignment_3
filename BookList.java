@@ -21,8 +21,7 @@ class BookList {
             new Book("FUNIX09", "Xây dựng phần mềm đầu tiên", "Funix 9", false)));
 
     // add book
-    static void add() {
-        final Scanner scanner = new Scanner(System.in);
+    static void add(final Scanner scanner) {
         System.out.println("Enter information for the new book:");
 
         final Book book = new Book();
@@ -49,8 +48,7 @@ class BookList {
     }
 
     // search book
-    static void search() {
-        final Scanner scanner = new Scanner(System.in);
+    static void search(final Scanner scanner) {
         System.out.println("Enter book title to search.");
 
         // get search keyword
@@ -84,8 +82,7 @@ class BookList {
         }
     }
 
-    static void borrow() {
-        final Scanner scanner = new Scanner(System.in);
+    static void borrow(final Scanner scanner) {
         System.out.println("Enter book ID to borrow.");
 
         // get id
@@ -110,6 +107,6 @@ class BookList {
 
     // print helper
     static private void printlnHeaderTable() {
-        System.out.println(String.format("%-10s%-40s%-20s%-20s", "ID", "Title", "Author", "Is Borrowed", null));
+        System.out.println(String.format("%-10s%-40s%-20s%-20s", "ID", "Title", "Author", "Is Borrowed"));
     }
 }

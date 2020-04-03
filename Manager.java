@@ -23,18 +23,19 @@ class Manager {
             System.out.println("5. Exit");
             System.out.print("Your choice: ");
             choice = scanner.nextInt();
+            scanner.nextLine();
             switch (choice) {
                 case 1:
-                    BookList.add();
+                    BookList.add(scanner);
                     break;
                 case 2:
-                    BookList.search();
+                    BookList.search(scanner);
                     break;
                 case 3:
                     BookList.display();
                     break;
                 case 4:
-                    BookList.borrow();
+                    BookList.borrow(scanner);
                     break;
                 case 5:
                     shouldExit = true;
